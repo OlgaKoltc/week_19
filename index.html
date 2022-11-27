@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Калькулятор</title>
   </head>
-  <body>
-    <script>
-      let user = {
-        name: "John",
-        surname: "Smith",
-
-        get fullName() {
-          return `${this.name} ${this.surname}`;
-        },
-
-        set fullName(value) {
-          [this.name, this.surname] = value.split(" ");
-        },
-      };
-
-      // set fullName запустится с данным значением
-      user.fullName = "Alice Cooper";
-
-      console.log(user.fullName);
+  <p>введите число</p>
+    <input id="number1"/> 
+  <p>введите число</p>
+    <input id="number2"/> 
+    <p>выберите действие</p>
+    <button onclick="addNumbers()">+</button>
+    <button onclick="subtractNumbers()">-</button>
+    <button onclick="multiplyNumbers()">*</button>
+    <button onclick="divideNumbers()">/</button>
+    <p>ответ</p>
+    <input id="result"/>
+    <script src="./js.js" >
     </script>
   </body>
 </html>
