@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <input type="text" name="name" placeholder="Имя" />
+      <input type="email" name="email" placeholder="E-Mail" />
+      <input type="tel" name="phone" placeholder="Телефон" />
+      <input type="url" name="url" placeholder="Ваш сайт" />
+      <input type="date" name="data" placeholder="Дата" />
+      <button type="button">Отправить</button>
+    </form>
+    <script>
+      let str = document.getElementsByName("email").value;
+      class Validator {
+        static сheckEmail(str) {
+          let isEmail = false;
+          if (str.includes("@")) isEmail = true;
+          return isEmail;
+        }
+      }
+      if (Validator.сheckEmail()) {
+        alert("проверьте Email");
+      }
+      console.log(validator.isEmail("alisa@mail.ru"));
+    </script>
+  </body>
+</html>
