@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Анкета</h1>
+    <form>
+      <div>
+        <label for="byname">Кличка питомца</label>
+        <input type="text" id="byname" required />*
+      </div>
+      <div>
+        <fieldset>
+          <legend><b>Данные владельца</b></legend>
+          <div>
+            <label for="name">Имя</label>
+            <input type="text" id="name" required />*
+          </div>
+          <label for="phone">Номер телефона</label>
+          <input type="tel" name="phone" placeholder="Телефон" />
+        </fieldset>
+      </div>
+      <div><b>Порода</b></div>
+      <select id="breed">
+        <option>Шотландская вислоухая</option>
+        <option>Мейнкун</option>
+        <option>Персидская</option>
+        <option>Бенгальская</option>
+        <option>Метис</option>
+      </select>
+      <div>
+        <b>Пол питомца</b>
+        <input type="radio" name="sex" id="sexMan" value="man" /><label
+          for="sexMan"
+          >Самец</label
+        >
+        <input type="radio" name="sex" id="sexWoman" value="woman" /><label
+          for="sexWoman"
+          >Самка</label
+        >
+      </div>
+      <div id="feed"><b>Корм</b></div>
+      <div>
+        <input type="checkbox" name="feed" id="feed1" /><label for="feed1"
+          >Сухой</label
+        >
+      </div>
+      <div>
+        <input type="checkbox" name="feed" id="feed2" /><label for="feed2"
+          >Влажный</label
+        >
+      </div>
+      <div>
+        <input type="checkbox" name="feed" id="feed3" /><label for="feed3"
+          >Натуральный</label
+        >
+      </div>
+      <label for="comment">Комментарий владельца</label>
+      <div>
+        <textarea name="comment" id="comment" rows="5" cols="15" optional>
+Если хотите добавить что-то важное, можно написать это здесь</textarea
+        >
+      </div>
+      Можете добавить фото питомца<input type="file" />
+      <div><button class="button" id="enter">Сохранить</button></div>
+      <button type="button" id="ok">Ок</button>
+    </form>
+    <script src="./task2.js"></script>
+  </body>
+</html>
